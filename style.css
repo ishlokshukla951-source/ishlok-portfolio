@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #10172A;
+    color: #F5F7FF;
+    line-height: 1.7;
+}
+
+/* 2. HEADER */
+
+header {
+    background-color: #151F36;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    border-bottom: 1px solid #293653;
+}
+
+/* Your name / logo */
+
+header h2 {
+    color: #FFFFFF;
+    font-size: 25px;
+}
+
+/* Navigation links */
+
+nav a {
+    color: #C5CEE3;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00D4FF;
+}
+
+/* 3. ALL SECTIONS */
+
+section {
+    padding: 70px 20px;
+    text-align: center;
+    scroll-margin-top: 20px;
+}
+
+section h1 {
+    color: #FFFFFF;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    color: #FFFFFF;
+}
+
+section p {
+    color: #B8C4DC;
+    font-size: 16px;
+}
+
+/* 4. HOME SECTION */
+
+.hero {
+    background:
+        radial-gradient(
+            circle at top right,
+            #29366A,
+            #10172A 65%
+        );
+    padding: 110px 20px;
+}
+
+.hero h1 {
+    font-size: 45px;
+}
+
+.hero span {
+    color: #00D4FF;
+}
+
+.hero h2 {
+    color: #A99CFF;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 20px auto 30px;
+}
+
+/* 5. BUTTON */
+
+.btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #6C63FF, #8B5CF6);
+    color: #FFFFFF;
+    padding: 13px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 5px 20px #6C63FF35;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px #6C63FF70;
+}
+
+/* 6. SKILLS AND PROJECT CARDS */
+
+.card {
+    background-color: #18233D;
+    max-width: 450px;
+    margin: 22px auto;
+    padding: 28px;
+    border: 1px solid #2A395B;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px #00000020;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border-color: #6C63FF;
+    box-shadow: 0 12px 30px #6C63FF20;
+}
+
+.card h2 {
+    color: #00D4FF;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.card p {
+    margin-bottom: 15px;
+}
+
+/* Links inside cards */
+
+.card a {
+    display: inline-block;
+    color: #A99CFF;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.card a:hover {
+    color: #00D4FF;
+}
+
+/* 7. ABOUT SECTION */
+
+#about {
+    background-color: #121B30;
+}
+
+#about p {
+    max-width: 750px;
+    margin: 12px auto;
+}
+
+/* 8. SKILLS SECTION */
+
+#skills {
+    background-color: #10172A;
+}
+
+/* 9. PROJECTS SECTION */
+
+#projects {
+    background-color: #121B30;
+}
+
+/* 10. CONTACT SECTION */
+
+#contact {
+    background:
+        linear-gradient(
+            135deg,
+            #182344,
+            #10172A
+        );
+}
+
+#contact a {
+    color: #00D4FF;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    color: #A99CFF;
+}
+
+/* 11. FOOTER */
+
+footer {
+    background-color: #0B1020;
+    color: #AAB6CF;
+    text-align: center;
+    padding: 25px 15px;
+    border-top: 1px solid #293653;
+}
+
+footer p {
+    font-size: 13px;
+}
+
+/* 12. MOBILE RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    header h2 {
+        font-size: 23px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+        font-size: 12px;
+    }
+
+    section {
+        padding: 50px 18px;
+    }
+
+    section h1,
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero {
+        padding: 75px 18px;
+    }
+
+    section p {
+        font-size: 14px;
+    }
+
+    .card {
+        padding: 22px 16px;
+    }
+}
